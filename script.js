@@ -34,7 +34,7 @@ products = [
   {
     name: 'Denmark',
     price: 9.99,
-    description: 'Th flag of Denmark (No danishes incuded). Landscape orientation.',
+    description: 'The flag of Denmark (No danishes incuded). Landscape orientation.',
     category: 'flag',
     img: 'denmark'
   },
