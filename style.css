@@ -1,0 +1,351 @@
+/** Add any CSS you need to this file. */
+body {
+  margin: 0;
+  font-family: 'Arial Narrow', Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+.container {
+  display: flex;
+}
+
+.center {
+  text-align: center;
+}
+
+.center-on-page {
+  text-align: center;
+  width: 100%;
+}
+
+.bottom-border {
+  border-bottom: 3px solid black;
+}
+
+.fixed-bottom {
+  position: fixed;
+  bottom: 0px;
+}
+
+.no-padding-margin {
+  padding: 0;
+  margin: 0;
+}
+
+#header {
+  background-color: dodgerblue;
+  font-family: Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
+  position: relative;
+}
+
+#header img {
+  padding: 5px;
+  margin: 0;
+}
+
+#company {
+  color: black;
+  position: absolute;
+  top: 19px;
+}
+
+.other-page {
+  position: absolute;
+  top: 19px;
+  right: 90px;
+  letter-spacing: 1px;
+}
+
+.link,
+.link:visited,
+.link:hover,
+.link:active {
+  color: white;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+#display {
+  background-color: #fffeaf;
+}
+
+#display img {
+  padding: 30px 0px;
+  /*min-width: 960px;*/
+  width: 90%;
+  min-height: 160px;
+  max-height: 384px;
+  object-fit: cover;
+}
+
+.sidebar {
+  margin-top: 0;
+  background-color: rgb(42, 170, 42);
+  min-width: 180px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-heading {
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+  border-bottom: 3px solid black;
+  margin: 5px;
+  padding: 5px;
+}
+
+#products {
+  margin: 0px;
+  padding: 0px 20px;
+  width: 100%;
+}
+
+#current-category {
+  padding: 5px;
+  margin: 5px;
+  display: inline-block;
+  width: 240px;
+}
+
+#categories {
+  display: flex;
+  background-color: rgb(42, 170, 42);
+}
+
+.category {
+  background-color: rgb(42, 170, 42);
+  color: white;
+  border-top: 3px solid rgb(42, 170, 42);
+  border-bottom: 3px solid rgb(42, 170, 42);
+}
+
+.category:hover {
+  background-color: rgb(33, 129, 33);
+  cursor: pointer;
+  border-top: 3px solid white;
+  border-bottom: 3px solid white;
+}
+
+.category h2 {
+  padding: 5px;
+  margin: 5px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+}
+
+.gallery {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2em;
+}
+
+.gallery-item {
+  padding: 0px;
+  max-width: 350px;
+}
+
+.gallery-item img {
+  border: 3px solid black;
+  width: 100%;
+}
+
+.gallery-item p {
+  font-family: 'Arial';
+  font-size: 20px;
+  margin: 5px;
+}
+
+#footer-form {
+  padding: 30px 0px 40px 0px;
+  background-color: #e0e0e0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#footer-store-name {
+  color: dodgerblue;
+  margin-top: 0px;
+  font-family: Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
+  letter-spacing: 1px;
+}
+
+input,
+textarea {
+  font-family: 'Montserrat', sans-serif;
+}
+
+#footer-bar {
+  width: 100vw;
+  height: 60px;
+  text-align: center;
+  background-color: dodgerblue;
+}
+
+#footer-bar h3 {
+  padding-top: 19px;
+  margin: 0px;
+}
+
+#subscribe-form {
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  color: white;
+}
+
+.fa-envelope {
+  background-color: rgb(42, 170, 42);
+  width: 50px;
+  padding-top: 4px;
+}
+
+.email-box {
+  width: 250px;
+  border: none;
+  padding-left: 10px;
+}
+
+.submit-box {
+  border: none;
+  color: white;
+  cursor: pointer;
+  background-color: rgb(42, 170, 42);
+}
+
+#contact-form {
+  width: 800px;
+  text-align: left;
+  margin: 0px auto;
+}
+
+#contact-form fieldset {
+  border: none;
+  line-height: 2em;
+  min-height: 2em;
+  padding: 10px 0px;
+  margin: 20px 0px;
+}
+
+#contact-form label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  padding: 0px;
+  margin: 0px;
+  width: 300px;
+}
+
+#contact-form label.short {
+  display: inline-block;
+  width: 100px;
+}
+
+#contact-form input[type='checkbox'],
+#contact-form input[type='radio'] {
+  height: 25px;
+  margin-top: 0;
+  margin-right: 0;
+  margin-left: 10px;
+  position: relative;
+  top: 7px;
+  width: 25px;
+}
+
+#contact-form input.standard {
+  height: 2em;
+  margin: 0px 5px;
+  padding-left: 5px;
+  width: 190px;
+}
+
+.form-title {
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+  border-bottom: 2px solid black;
+}
+
+#contact-message {
+  width: 794px;
+  resize: vertical;
+  min-height: 50px;
+  max-height: 140px;
+}
+
+#contact-submit {
+  margin-right: 30px;
+}
+
+#contact-reset {
+  float: right;
+}
+
+#contact-submit,
+#contact-reset {
+  width: 120px;
+  height: 40px;
+  color: white;
+  background-color: rgb(42, 170, 42);
+  border: none;
+}
+
+.spacing{
+  height: 80px;
+}
+
+
+@media(max-width:850px){
+  #contact-form fieldset {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media(max-width:600px){
+  #company {
+    top: 2px;
+  }
+  
+  .other-page {
+    top: 32px;
+    right: initial;
+  }
+
+  .container{
+    display: block;
+  }
+
+  .gallery {
+    display: block;
+    width: 100%;
+  }
+
+  #footer-form h1{
+    font-size: 20px;
+  }
+
+  #subscribe-form{
+    flex-wrap: wrap;
+  }
+
+  .sidebar{
+    margin-top: -5px;
+  }
+
+  .sidebar ul{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .category {
+    border: 3px solid rgb(42, 170, 42);
+  }
+  
+  .category:hover {
+    cursor: pointer;
+    border: 3px solid white;
+  }
+
+}

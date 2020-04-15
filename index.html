@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WEB222 Store</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a1282cdaac.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!--Top bar-->
+    <header>
+      <div id="header">
+        <a href="#"><img src="images/logo.jpg"></a>
+        <a href="#" id="company" class="link">SALAMANDERP</a>
+        <a href="contact.html" class="other-page link">CONTACT</a>
+      </div>
+    </header>
+
+    <!--Big-picture-->
+    <section id="display" class="center bottom-border">
+      <img src="images/display.jpg">
+    </section>
+
+    <!--Products-->
+    <section class="container bottom-border">
+      <!--Category sidebar-->
+      <aside class="sidebar">
+        <div class="center"><h2 class="sidebar-heading">CATEGORIES</h2></div>
+        <ul>
+          <li>
+            <div class="category" onclick="loadProducts('all')"><h2>All Posters</h2></div>
+          </li>
+          <li>
+            <div class="category" onclick="loadProducts('animal')"><h2>Animals</h2></div>
+          </li>
+          <li>
+            <div class="category" onclick="loadProducts('flag')"><h2>Flags</h2></div>
+          </li>
+          <li>
+            <div class="category" onclick="loadProducts('scenery')"><h2>Scenery</h2></div>
+          </li>
+          <li>
+            <div class="category" onclick="loadProducts('misc')"><h2>Miscellaneous</h2></div>
+          </li>
+          <li><br></li>
+        </ul>
+      </aside>
+      <!--Product gallery-->
+      <div id="products">
+        <div>
+          <h1 class="no-padding-margin" style="width:90%"><span id="current-category">Oh no! The products didn't load. </span>Sizes may vary per poster. Standard Sizes: Small (11" x 17"), Medium (18" x 24"), Large (24" x 36")</h1>
+        </div>
+        <div class="gallery" id="gallery">
+          <!--changes depending on selected category. Children have class="gallery-item"-->
+        </div>
+      </div>
+    </section>
+
+    <!--footer-->
+    <footer class="center">
+      <div id="footer-form">
+        <h1 id="footer-store-name">SALAMANDERP</h1>
+        <h1>Subscribe To Our Newsletter!</h1>
+        <form id="subscribe-form" action="https://formspree.io/mjveyqbp" method="POST">
+          <i class="fas fa-envelope fa-2x"></i>
+          <input class="email-box" type="email" name="email" placeholder="Enter your email">
+          <input class="submit-box" type="submit" name="submit" value="Subscribe!">
+        </form>
+      </div>
+      <div id="footer-bar">
+        <h3>&copy;Julian Buchholz 2020</h3>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
