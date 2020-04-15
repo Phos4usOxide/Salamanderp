@@ -25,6 +25,13 @@ products = [
     img: 'cat'
   },
   {
+    name: 'Crab',
+    price: 11.99,
+    description: 'Snip snip! Watch out for the claws on this crab! Landscape orientation.',
+    category: 'animal',
+    img: 'crab'
+  },
+  {
     name: 'Czech Republic',
     price: 9.99,
     description: 'You Prague-ably don\'t want the Czechia flag but buy it anyway. Landscape orientation.',
@@ -114,6 +121,13 @@ products = [
     description: 'Yeahhh mannn, the Jamaican flag. Landscape orientation.',
     category: 'flag',
     img: 'jamaica'
+  },
+  {
+    name: 'Nature',
+    price: 9.99,
+    description: 'Keep calm and respect nature, or else. Square. Sizes: 24", 30", 36".',
+    category: 'misc',
+    img: 'nature'
   },
   {
     name: 'Norway',
